@@ -1,9 +1,10 @@
 import pandas as pd
+
 pd.set_option("display.max_columns", None)
 pd.set_option("display.width", None)
 
-
 from database import get_connection
+
 
 # def explore_tables(tables):
 #     connection = get_connection()
@@ -56,12 +57,13 @@ def explore_table(table):
     finally:
         connection.close()
 
+
 def explore_tables(tables):
     for table in tables:
         explore_table(table)
 
-if __name__ == "__main__":
 
+if __name__ == "__main__":
     tables = [
         "IMDB_movies",
         "data_product",

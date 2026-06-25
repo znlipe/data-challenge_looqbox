@@ -6,18 +6,20 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 # Connection
 def get_connection():
     try:
         return sql.connect(
-            host= os.getenv("MYSQL_HOST"),
-            user = os.getenv("MYSQL_USER"),
-            password = os.getenv("MYSQL_PASSWORD"),
-            database = os.getenv("MYSQL_DATABASE"),
+            host=os.getenv("MYSQL_HOST"),
+            user=os.getenv("MYSQL_USER"),
+            password=os.getenv("MYSQL_PASSWORD"),
+            database=os.getenv("MYSQL_DATABASE"),
         )
     except Error as e:
         print(f"Connection error: {e}")
         raise
+
 
 if __name__ == "__main__":
     conn = get_connection()
