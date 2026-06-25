@@ -6,3 +6,10 @@
 
 #PyCharm
 .idea/
+
+#Notes
+.notes
+
+#Python cache
+__pycache__/
+*.py[cod]
