@@ -1,0 +1,1 @@
+-- What sections do the 'BEBIDAS' and 'PADARIA' departments have?

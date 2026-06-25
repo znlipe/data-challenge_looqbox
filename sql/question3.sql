@@ -1,0 +1,1 @@
+-- What was the total sale of products (in $) of each Business Area in the first quarter of 2019?
