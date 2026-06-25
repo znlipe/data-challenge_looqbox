@@ -1,1 +1,9 @@
 -- What sections do the 'BEBIDAS' and 'PADARIA' departments have?
+SELECT DISTINCT
+    DEP_COD
+    ,DEP_NAME
+    ,SECTION_COD
+    ,SECTION_NAME
+FROM data_product
+WHERE DEP_NAME IN ('BEBIDAS','PADARIA')
+ORDER BY DEP_NAME, SECTION_NAME
