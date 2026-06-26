@@ -5,32 +5,6 @@ pd.set_option("display.width", None)
 
 from database import get_connection
 
-
-# def explore_tables(tables):
-#     connection = get_connection()
-#
-#     try:
-#         for table_name in tables:
-#             print(f"\n" + "=" * 60)
-#             print(f"TABLE: {table_name}")
-#             print("=" * 60)
-#
-#             describe = pd.read_sql(
-#                 f"DESCRIBE {table_name}",
-#                 connection
-#             )
-#             print(describe)
-#             print("\n" + "=" * 60)
-#             print("SAMPLE:")
-#             sample = pd.read_sql(
-#                 f"SELECT * FROM {table_name} LIMIT 5",
-#             connection
-#             )
-#             print(sample)
-#
-#     finally:
-#         connection.close()
-
 def explore_table(table):
     connection = get_connection()
 
