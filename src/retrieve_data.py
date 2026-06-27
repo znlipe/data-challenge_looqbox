@@ -40,22 +40,8 @@ def retrieve_data(product_code: int = None, store_code: int = None, date=None):
 
 
 if __name__ == "__main__":
-    my_data = retrieve_data()
-    print(my_data.columns)
-
-    # my_data = retrieve_data(
-    #     18,
-    #     1,
-    #     ['2019-01-01', '2019-01-31']
-    # )
-
-    # my_data = retrieve_data(
-    #     None,None,['2019-01-01', '2019-01-02']
-    # )
-    # my_data = retrieve_data(
-    #     product_code=172,
-    #     store_code=2
-    # )
-
-    # print(my_data.head(10))
-    # print(f"shape: {my_data.shape}")
+    my_data = retrieve_data(
+        product_code=172,
+        store_code=2
+    )
+    print(my_data)
